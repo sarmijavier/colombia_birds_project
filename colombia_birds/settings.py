@@ -144,3 +144,7 @@ BOOTSTRAP5 = {
     "required_css_class": "bootstrap5-required",
     "javascript_in_head": True,
 }
+
+
+LOGIN_URL = '/login'
+LOGIN_REDIRECT_URL = '/main'

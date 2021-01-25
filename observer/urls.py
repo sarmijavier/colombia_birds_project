@@ -5,13 +5,18 @@
 from django.urls import path
 
 #views
-from observer.views import MyView
+from observer.views import LoginView, MyView
 
 urlpatterns = [
     
     path(
         route='login/',
-        view=MyView.as_view(),
+        view=LoginView.as_view(),
         name='login'
     ),
+    path(
+        route='main/',
+        view=MyView.as_view(),
+        name='main'
+    )
 ]
